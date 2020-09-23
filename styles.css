@@ -12,6 +12,8 @@
     background-image: url(assets/blue-green.png);
     color: white;
     border-radius: 10px;
+    margin-bottom: 100px;
+    text-align: center;
 
 }
 
@@ -28,3 +30,7 @@ li{
     margin-bottom: 50px;
     margin-top: 50px;
 }
+.custom-select{
+    width:40%;
+}
+

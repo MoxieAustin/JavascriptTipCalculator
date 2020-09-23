@@ -5,6 +5,9 @@ let btn = document.getElementById('btn').addEventListener('click',buttonClick);
 let form = document.getElementById('tip-calc')
 let tipSelect = document.getElementById('tip-percent').value
 
+document.getElementById('tip-amount').textContent= "";
+document.getElementById('bill-text').textContent= "";
+
 //function calcTip(){
 //let totalTip
 //tipPercent = document.getElementById('tip-percent')
@@ -46,7 +49,7 @@ function buttonClick(e){
   
   let tipAfterTotal = Number(tipTotal) + Number(billInput);
 
-  tipAfterTotalDollar = "$"+tipAfterTotal
+  tipAfterTotalDollar = "$"+tipAfterTotal.toFixed(2)
 
   document.getElementById('bill-text').textContent = tipAfterTotalDollar
 
